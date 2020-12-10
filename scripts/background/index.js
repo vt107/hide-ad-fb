@@ -18,10 +18,10 @@ chrome.runtime.onInstalled.addListener(function () {
 				name: [],
 			});
 		}
-		chrome.tabs.create({
-			url: chrome.runtime.getURL("popup.html"),
-			selected: true,
-		});
+		// chrome.tabs.create({
+		// 	url: chrome.runtime.getURL("popup.html"),
+		// 	selected: true,
+		// });
 	});
 	// Notification after install
 	chrome.notifications.create({

@@ -148,10 +148,9 @@ function getDivPage(name) {
   return div;
 }
 
-function executeDiv(this_div, type) {
+function executeDiv(this_div) {
   if (this_div.length !== 0) {
     this_div.remove();
-    chrome.runtime.sendMessage({updateBadge: ""});
   }
 }
 
