@@ -5,6 +5,6 @@ chrome.webRequest.onBeforeRequest.addListener((catches) => {
 				file: "scripts/injects/flickr.js", // [Optional] || Path from the root of ext. Ex: Err: injectScript/script.js | Success: js/injectScript/script.js
 			});
 		}
-	}
+	};
 	if (catches.url in urlTable) urlTable[catches.url]();
 }, { urls: ["<all_urls>"], types: ["main_frame", "xmlhttprequest", "media"] });
